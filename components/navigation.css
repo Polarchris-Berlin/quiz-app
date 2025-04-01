@@ -22,6 +22,6 @@ footer {
   color: darkgray;
 }
 
-.active {
-  color: blue;
+.footer-navigation li a:hover {
+  color: #365557;
 }
