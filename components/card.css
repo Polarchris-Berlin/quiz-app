@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 20px;
+  max-width: 90%;
+  margin: 20px 0;
+}
+
+.question-tags {
+  display: flex;
+  list-style: none;
+  order: 4;
+  align-self: flex-start;
+}
+
+.question-tags li {
+  margin: 0 20px 0 0;
+  background-color: red;
+}

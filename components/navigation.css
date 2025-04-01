@@ -10,6 +10,8 @@ footer {
   width: 100%;
 }
 
-.footer-navigation {
+.footer-navigation li {
   list-style: none;
+  flex-grow: 1;
+  text-align: center;
 }
