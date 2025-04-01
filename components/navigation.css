@@ -1,0 +1,15 @@
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-navigation {
+  list-style: none;
+}
