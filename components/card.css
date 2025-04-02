@@ -16,6 +16,11 @@ main {
   background-color: cadetblue;
 }
 
+.question-card h2 {
+  display: flex;
+  align-self: flex-start;
+}
+
 .question-tags {
   display: flex;
   list-style: none;
@@ -39,9 +44,6 @@ main {
   right: 15px;
 }
 
-button {
-  font-size: large;
-  background-color: darkgray;
-  color: white;
-  padding: 5px;
+.bookmark-card:hover {
+  color: #365557;
 }
