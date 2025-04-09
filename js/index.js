@@ -1,21 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const firstCard = document.querySelector('[data-js="bookmark-card1"]');
-  const bookmarkIcon = firstCard;
+const bookmarkIcon = document.querySelector('[data-js="bookmark-card1"]');
 
-  bookmarkIcon.addEventListener("click", () => {
-    bookmarkIcon.classList.toggle("active");
-  });
+const answerButton = document.querySelector('[data-js="answer-button1"]');
+const answer1 = document.querySelector(".answer1");
 
-  const answerButton = document.querySelector('[data-js="answer-button1"]');
-  const answer1 = document.querySelector(".answer1");
+bookmarkIcon.addEventListener("click", () => {
+  bookmarkIcon.classList.toggle("active");
+});
 
-  answerButton.addEventListener("click", () => {
-    answer1.classList.toggle("hidden");
+answerButton.addEventListener("click", () => {
+  answer1.classList.toggle("hidden");
 
-    if (answer1.classList.contains("hidden")) {
-      answerButton.textContent = "show answer";
-    } else {
-      answerButton.textContent = "hide answer";
-    }
-  });
+  if (answer1.classList.contains("hidden")) {
+    answerButton.textContent = "show answer";
+  } else {
+    answerButton.textContent = "hide answer";
+  }
 });
