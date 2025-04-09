@@ -47,3 +47,7 @@ main {
 .bookmark-card i.active {
   color: #365557;
 }
+
+.hidden {
+  display: none;
+}
