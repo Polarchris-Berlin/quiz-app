@@ -1,7 +1,11 @@
 * {
-  border: 0px solid blue;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
