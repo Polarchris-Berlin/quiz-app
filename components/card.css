@@ -44,6 +44,10 @@ main {
   right: 15px;
 }
 
-.bookmark-card:hover {
+.bookmark-card i.active {
   color: #365557;
+}
+
+.hidden {
+  display: none;
 }
