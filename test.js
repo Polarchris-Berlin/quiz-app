@@ -6,16 +6,17 @@ const tag = document.querySelector('[data-js="user-tag"]');
 
 function createCard(dataContainer) {
   const section = document.createElement("section");
-  section.classList.add("question-card");
+  section.setAttribute("class", "question-card");
   console.log(section);
 
   const h2 = document.createElement("h2");
   h2.textContent = "Your submitted question";
   console.log(h2);
   section.append(h2);
+  console.log(section);
 
   const ul = document.createElement("ul");
-  ul.classList.add("question-tags");
+  ul.setAttribute("class", "question-tags");
   console.log(ul);
 
   const li = document.createElement("li");
@@ -24,33 +25,9 @@ function createCard(dataContainer) {
   ul.append(li);
   section.append(ul);
 
-  const questionParagraph = document.createElement("p");
-  questionParagraph.textContent = dataContainer["user-question"];
-  console.log(questionParagraph);
-  section.append(questionParagraph);
-
-  const button = document.createElement("button");
-  button.classList.add("answer-buttons");
-  button.setAttribute("data-js", "answer-button");
-  button.textContent = "show answer";
-  console.log(button);
-  section.append(button);
-
-  const answerParagraph = document.createElement("p");
-  answerParagraph.classList.add("answer", "hidden");
-  answerParagraph.textContent = dataContainer["user-answer"];
-  section.append(answerParagraph);
-  console.log(answerParagraph);
-
-  const div = document.createElement("div");
-  div.classList.add("bookmark-card");
-  section.append(div);
-  console.log(div);
-
-  const i = document.createElement("i");
-  i.classList.add("fa-solid", "fa-bookmark");
-  i.setAttribute("data-js", "bookmark-card");
-  div.append(i);
+  const p = document.createElement("p");
+  p.textContent = dataContainer["user-question"];
+  console.log(p);
 
   form.append(section);
 }
@@ -66,3 +43,5 @@ form.addEventListener("submit", (event) => {
 
   createCard(data);
 });
+
+//submit input into new card element

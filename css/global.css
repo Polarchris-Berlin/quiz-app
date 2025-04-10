@@ -5,7 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-form {
+legend {
+  margin-bottom: 1rem;
+}
+.fieldset {
   display: flex;
   flex-direction: column;
 }

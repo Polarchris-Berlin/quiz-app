@@ -15,18 +15,43 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main></main>
-    <section>
+    <main>
       <form data-js="form">
-        <label for="your-question">Your question:</label>
-        <textarea id="your-question" name="your-question"></textarea>
-        <label for="your-answer">Your answer:</label>
-        <textarea id="your-answer" name="your-answer"></textarea>
-        <label for="tag">Tag:</label>
-        <input id="tag" name="tag" />
-        <button type="submit">Send</button>
+        <fieldset class="fieldset">
+          <legend>Create a new quiz card</legend>
+
+          <label for="user-question">Your question:</label>
+          <textarea
+            id="user-question"
+            name="user-question"
+            data-js="user-question"
+            placeholder="Enter your question here"
+          ></textarea>
+          <label for="user-answer">Your answer:</label>
+          <textarea
+            id="user-answer"
+            name="user-answer"
+            data-js="user-answer"
+            placeholder="Enter your answer here"
+          ></textarea>
+          <label for="user-tag">Tag:</label>
+          <input
+            id="user-tag"
+            name="user-tag"
+            data-js="user-tag"
+            placeholder="Enter a suitable tag"
+          />
+          <button
+            type="submit"
+            aria-label="Send form"
+            name="submit-button"
+            data-js="submit-button"
+          >
+            Send
+          </button>
+        </fieldset>
       </form>
-    </section>
+    </main>
     <footer>
       <nav>
         <ul class="footer-navigation">
@@ -47,3 +72,22 @@
     </footer>
   </body>
 </html>
+
+<section class="question-card">
+  <h2>Question 1</h2>
+  <ul class="question-tags">
+    <li>html</li>
+    <li>css</li>
+    <li>flexbox</li>
+  </ul>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quis
+    provident harum amet, quos ut quam et placeat itaque ad! Quos, error! Illo
+    libero molestiae aperiam vitae eum. Iusto, aut.
+  </p>
+  <button class="answer-buttons" data-js="answer-button1">show answer</button>
+  <p class="answer1 hidden">Musterantwort1</p>
+  <div class="bookmark-card">
+    <i class="fa-solid fa-bookmark" data-js="bookmark-card1"></i>
+  </div>
+</section>
